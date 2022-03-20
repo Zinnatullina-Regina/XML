@@ -278,8 +278,6 @@ namespace XML
         private System.Windows.Forms.DataGridViewTextBoxColumn Sname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Snumofworkingplaces;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kindofshop;
-        private System.Windows.Forms.DataGridView WdataGridView;
-        private System.Windows.Forms.DataGridView PdataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duties;
         private System.Windows.Forms.DataGridViewTextBoxColumn Payment;
@@ -289,6 +287,8 @@ namespace XML
         private System.Windows.Forms.DataGridViewTextBoxColumn Workingplace;
         private System.Windows.Forms.DataGridViewTextBoxColumn Wposit;
         public System.Windows.Forms.DataGridView ShopsdataGridView;
+        public System.Windows.Forms.DataGridView WdataGridView;
+        public System.Windows.Forms.DataGridView PdataGridView;
     }
 }
 

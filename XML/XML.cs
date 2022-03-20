@@ -11,15 +11,17 @@ using System.Xml;
 
 namespace XML
 {
-    [System.Xml.Serialization.XmlRoot("EntertaimentCenter")]
     public partial class XML : Form
     {
         public XML()
         {
             InitializeComponent();
+            
         }
 
+       
 
+        [System.Xml.Serialization.XmlRoot("EntertaimentCenter")]
         public class EntertaimentCenter_
         {
             [System.Xml.Serialization.XmlElement("shops")]
@@ -115,11 +117,11 @@ namespace XML
 
         }
 
+        
 
 
 
-
-
+        
 
 
 
