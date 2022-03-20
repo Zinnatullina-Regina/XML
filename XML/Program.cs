@@ -9,7 +9,7 @@ using System.IO;
 
 namespace XML
 {
-    class Program
+   public partial class Program : Form 
     {
         public static XML.EntertaimentCenter_ LoadXML (string EntertaimentCenter)
         {
@@ -28,14 +28,17 @@ namespace XML
            // {
                 MemoryStream rewData = new MemoryStream(File.ReadAllBytes(EntertaimentCenter));
                 XmlSerializer xmls = new XmlSerializer(typeof(XML.EntertaimentCenter_));
-                var xmlList = (XML.EntertaimentCenter_)xmls.Deserialize(rewData);
+                XML.EntertaimentCenter_ xmlList = (XML.EntertaimentCenter_)xmls.Deserialize(rewData);
                 MessageBox.Show("XML обработан");
                 return xmlList;
-          //  }
+          //  int num = 0;
+          //  for (int i = 0; i <= xmlList.shops.ShopsArray.Length; i++)
+          // ShopsdataGridView.Rows.Add(xmlList.shops.ShopsArray[num].Sname.ToString(), name, etc); ;
+          ////  }
 
            // catch (Exception e)
-         //   {
-                MessageBox.Show("Ошибка обработки XML данных");
+           //   {
+            MessageBox.Show("Ошибка обработки XML данных");
                 return null;
            // }
 

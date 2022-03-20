@@ -31,10 +31,10 @@ namespace XML
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XML));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Shops = new System.Windows.Forms.TabPage();
@@ -44,16 +44,16 @@ namespace XML
             this.Kindofshop = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Workers = new System.Windows.Forms.TabPage();
             this.WdataGridView = new System.Windows.Forms.DataGridView();
-            this.Positions = new System.Windows.Forms.TabPage();
-            this.PdataGridView = new System.Windows.Forms.DataGridView();
-            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duties = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Payment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.WSname = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Workingplace = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Wposit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Positions = new System.Windows.Forms.TabPage();
+            this.PdataGridView = new System.Windows.Forms.DataGridView();
+            this.Pname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duties = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Payment = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.Shops.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ShopsdataGridView)).BeginInit();
@@ -156,6 +156,47 @@ namespace XML
             this.WdataGridView.Size = new System.Drawing.Size(1048, 647);
             this.WdataGridView.TabIndex = 0;
             // 
+            // WSname
+            // 
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.WSname.DefaultCellStyle = dataGridViewCellStyle3;
+            this.WSname.HeaderText = "ФИО";
+            this.WSname.MinimumWidth = 6;
+            this.WSname.Name = "WSname";
+            this.WSname.Width = 275;
+            // 
+            // Sex
+            // 
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Sex.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Sex.HeaderText = "Пол";
+            this.Sex.MinimumWidth = 6;
+            this.Sex.Name = "Sex";
+            this.Sex.Width = 250;
+            // 
+            // Age
+            // 
+            this.Age.HeaderText = "Возраст";
+            this.Age.MinimumWidth = 6;
+            this.Age.Name = "Age";
+            this.Age.Width = 125;
+            // 
+            // Workingplace
+            // 
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Workingplace.DefaultCellStyle = dataGridViewCellStyle5;
+            this.Workingplace.HeaderText = "Место работы";
+            this.Workingplace.MinimumWidth = 6;
+            this.Workingplace.Name = "Workingplace";
+            this.Workingplace.Width = 220;
+            // 
+            // Wposit
+            // 
+            this.Wposit.HeaderText = "Должность";
+            this.Wposit.MinimumWidth = 6;
+            this.Wposit.Name = "Wposit";
+            this.Wposit.Width = 250;
+            // 
             // Positions
             // 
             this.Positions.BackColor = System.Drawing.Color.DarkKhaki;
@@ -206,46 +247,6 @@ namespace XML
             this.Payment.Name = "Payment";
             this.Payment.Width = 325;
             // 
-            // WSname
-            // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.WSname.DefaultCellStyle = dataGridViewCellStyle3;
-            this.WSname.HeaderText = "ФИО";
-            this.WSname.MinimumWidth = 6;
-            this.WSname.Name = "WSname";
-            this.WSname.Width = 275;
-            // 
-            // Sex
-            // 
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Sex.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Sex.HeaderText = "Пол";
-            this.Sex.MinimumWidth = 6;
-            this.Sex.Name = "Sex";
-            this.Sex.Width = 250;
-            // 
-            // Age
-            // 
-            this.Age.HeaderText = "Возраст";
-            this.Age.MinimumWidth = 6;
-            this.Age.Name = "Age";
-            // 
-            // Workingplace
-            // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Workingplace.DefaultCellStyle = dataGridViewCellStyle5;
-            this.Workingplace.HeaderText = "Место работы";
-            this.Workingplace.MinimumWidth = 6;
-            this.Workingplace.Name = "Workingplace";
-            this.Workingplace.Width = 220;
-            // 
-            // Wposit
-            // 
-            this.Wposit.HeaderText = "Должность";
-            this.Wposit.MinimumWidth = 6;
-            this.Wposit.Name = "Wposit";
-            this.Wposit.Width = 250;
-            // 
             // XML
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -274,7 +275,6 @@ namespace XML
         private System.Windows.Forms.TabPage Shops;
         private System.Windows.Forms.TabPage Workers;
         private System.Windows.Forms.TabPage Positions;
-        private System.Windows.Forms.DataGridView ShopsdataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sname;
         private System.Windows.Forms.DataGridViewTextBoxColumn Snumofworkingplaces;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kindofshop;
@@ -288,6 +288,7 @@ namespace XML
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Workingplace;
         private System.Windows.Forms.DataGridViewTextBoxColumn Wposit;
+        public System.Windows.Forms.DataGridView ShopsdataGridView;
     }
 }
 
